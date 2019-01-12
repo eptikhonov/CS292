@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".Main4Activity">
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="onPrev"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/circle_button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignStart="@+id/square_button"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="78dp"
+        android:background="@drawable/button_circle"
+        android:onClick="onCircle"
+        android:padding="15dp"
+        android:text="Circle"
+        android:textColor="@android:color/white"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_editor_absoluteX="110dp"
+        app:layout_editor_absoluteY="75dp" />
+
+    <Button
+        android:id="@+id/square_button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="171dp"
+        android:background="@drawable/button_square"
+        android:onClick="onSquare"
+        android:padding="15dp"
+        android:text="Square"
+        android:textColor="@android:color/white"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_editor_absoluteX="110dp"
+        app:layout_editor_absoluteY="75dp"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="297dp" />
+
+</RelativeLayout>

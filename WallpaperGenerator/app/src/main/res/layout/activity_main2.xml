@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/welcome_message_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="#036e64"
+        android:padding="16dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Welcome to Wallpaper Generator"
+        android:textColor="#ddd"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome_message"
+        android:layout_width="305dp"
+        android:layout_height="133dp"
+        android:layout_below="@+id/welcome_title"
+        android:layout_margin="16dp"
+        android:layout_marginStart="32dp"
+        android:text="With this App, you will use three sliders to create a color for shape that you would like to be generated as your wallpaper background. You will create three different colors, pick a shape, and click save."
+        android:textColor="#ddd"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        tools:layout_width="wrap_content" />
+
+    <Button
+        android:id="@+id/gotIt_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="19dp"
+        android:background="#3b978d"
+        android:onClick="onNext"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="Got It"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
